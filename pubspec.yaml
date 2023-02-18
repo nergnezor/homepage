@@ -15,9 +15,11 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^2.0.0
   flutter_rive_generator: 0.1.0
+  flame_rive: ^1.6.0
+
 
 flutter:
   uses-material-design: true
   assets:
-    - assets/valybol.riv
+    - assets/nerg.riv
     - assets/SalmonLake91bpm.ogg

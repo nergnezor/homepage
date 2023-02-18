@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'rive/valybol.rive.dart';
+import 'rive/nerg.rive.dart';
 import 'package:flutter/material.dart';
 import 'package:rive/rive.dart';
 
@@ -33,25 +33,26 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  Valybol? valybol;
-  BeachStateMachine1StateMachine? valybolController;
+  Alla? valybol;
+  // BeachStateMachine1StateMachine? valybolController;/
 
   @override
   void initState() {
     super.initState();
-    Valybol.load().then((r) async {
-      setState(() {
-        valybol = r;
-        valybolController = r.beach.getBeachStateMachine1StateMachine();
-        r.beach.artboard.addController(valybolController!.controller);
-      });
-    });
+    // valybol.artboard.pa
+    // Alla.load().then((r) async {
+    //   setState(() {
+    //     valybol = r;
+    //     // valybolControaller = r.beach.getBeachStateMachine1StateMachine();
+    //     // r.beach.artboard.addController(valybolController!.controller);
+    //   });
+    // });
     // set timed collision detection
-    Timer.periodic(const Duration(milliseconds: 100), (timer) {
-      if (valybolController != null) {
-        print(valybol!.ball.artboard.x);
-      }
-    });
+    // Timer.periodic(const Duration(milliseconds: 100), (timer) {
+    //   if (valybolController != null) {
+    //     print(valybol!.ball.artboard.x);
+    //   }
+    // });
   }
 
   @override
@@ -61,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: RiveAnimation.asset(
           fit: BoxFit.cover,
-          Valybol.assetPath,
+          Nerg.assetPath,
           // animations: [valybol.beach.],
           stateMachines: const ["State Machine 1"],
         ),
