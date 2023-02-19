@@ -2,7 +2,8 @@
 [Gg]enerated*
 # web
 .dart_tool
-build
+build/*
+!build/web
 .idea
 test
 homepage.iml
