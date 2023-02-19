@@ -73,7 +73,7 @@ jobs:
         
   release:
     name: Release APK
-    needs: builds
+    needs: build
     #if: startsWith(github.ref, 'refs/tags/v')
     runs-on: ubuntu-latest
     steps:
