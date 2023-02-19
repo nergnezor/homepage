@@ -11,7 +11,7 @@ class MyRiveAnimation extends StatelessWidget {
     return const Scaffold(
       body: Center(
         child: RiveAnimation.asset(
-          'assets/nerg.riv',
+          'nerg.riv',
           fit: BoxFit.cover,
         ),
       ),
