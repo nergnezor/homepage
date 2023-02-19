@@ -1,4 +1,4 @@
-package com.example.valybol
+package com.example.homepage
 
 import io.flutter.embedding.android.FlutterActivity
 
