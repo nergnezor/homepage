@@ -36,7 +36,7 @@ jobs:
     - run: flutter create --platforms=web .
     # - run: flutter pub get
 #     - run: flutter test
-    - run: flutter build web
+    - run: flutter clean && flutter build web
 
     # - name: Deploy to GitHub Pages
     #   uses: crazy-max/ghaction-github-pages@v2
