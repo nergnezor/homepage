@@ -3,7 +3,8 @@
 # web
 .dart_tool
 build/*
-!build/web
+# !build/web
 .idea
 test
 homepage.iml
+.flutter-plugins*
